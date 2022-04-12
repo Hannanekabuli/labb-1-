@@ -1,4 +1,5 @@
 <?php
+
 /* title function */
 function theme_setup(){
     add_theme_support('title-tag');
@@ -27,16 +28,12 @@ add_action("wp_enqueue_scripts","theme_css_js");
 
 
 
-
-
-
 /* gör så att vi kan välja en utvald bild till en post */
 add_theme_support('post-thumbnails');
 /* lägger till så att vi kan skapa menyer i admin panelen */
 add_theme_support('menus');
 /* lägg till widget */
 add_theme_support('widgets');
-
 
 
 
@@ -84,9 +81,6 @@ function wpdocs_custom_excerpt_length( $length ) {
     return 1000;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
-
-
-
 
 
 ?>
