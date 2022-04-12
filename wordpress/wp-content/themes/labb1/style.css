@@ -7,7 +7,7 @@ Theme Name: Labb 1
 }
 
 body {
-	background-color: #eee !important;
+	background-color: #eee;
 }
 
 a {
@@ -37,7 +37,7 @@ label {
 input[type="text"],
 input[type="email"] {
 	display: block;
-	width: 200px !important;
+	min-width: 200px;
 }
 
 input[type="submit"] {
@@ -45,8 +45,51 @@ input[type="submit"] {
 }
 
 textarea {
-	width: 200px !important;
+	min-width: 200px;
 }
+
+.col-md-4  li {
+	list-style: none;
+}
+
+.col-md-offset-1 li {
+	list-style: none;
+}
+
+#menu-footermeny.menu {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+#menu-footermeny a {
+	margin-left: 10px; 
+}
+
+#menu-sidomeny {
+	list-style: none;
+}
+
+#menu-item-125 {
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 12px;
+}
+
+#menu-item-126 {
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 12px;
+}
+
+#menu-item-127 {
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 12px;
+} 
+
+#menu-item-128 {
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 12px;
+}
+
 
 /* Header styles
 ------------------------------------------------------------------ */
@@ -319,6 +362,17 @@ article .meta {
 
 }
 
+.side-menu {
+	margin: 0;
+	padding: 0;
+}
+
+	.side-menu > li {
+		border-bottom: solid 1px #ccc;
+		list-style: none;
+		padding: 10px 0;
+	}
+
 .searchform-wrap {
 	margin-bottom: 30px;
 }
@@ -490,6 +544,18 @@ article .meta {
 		margin: 0;
 		padding: 0;
 	}
+
+		#footer .social > li {
+			list-style: none;
+			margin-bottom: 5px;
+		}
+
+			#footer .social > li > .fa {
+				margin-right: 5px;
+				min-width: 20px;
+				text-align: center;
+			}
+
 @media ( max-width: 768px ) {
 
 #footer h4 {
